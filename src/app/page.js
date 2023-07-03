@@ -1,5 +1,13 @@
+import Nav from "@/components/nav";
+import Hero from "@/components/hero";
+
 export default function Home() {
   return (
-    <h1 className="text-lime-400 text-xl font-bold">Hello World!</h1>
+    <main>
+      <Nav />
+      <div className="px-10 md:px-28 lg:px-28">
+        <Hero />
+      </div>
+    </main>
   );
 }
