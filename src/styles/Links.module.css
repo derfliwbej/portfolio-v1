@@ -1,0 +1,28 @@
+.links {
+    display: none;
+}
+
+.links::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: white;
+}
+
+.icon {
+    fill: white;
+    transition: transform 0.25s ease-in-out;
+}
+
+.icon:hover {
+    fill: #60a5fa;
+    transform: translateY(-5px);
+}
+
+@media (min-width: 768px) {
+    .links {
+        display: flex;
+    }
+}
