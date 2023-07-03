@@ -1,0 +1,6 @@
+.gradient-border {
+    background: radial-gradient(circle at top left, #60a5fa, #a3e635);
+    padding: 0.1rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
