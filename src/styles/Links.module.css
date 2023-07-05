@@ -1,14 +1,5 @@
-.links {
-    display: none;
-}
-
 .links::after {
-    content: '';
-    display: block;
-    width: 1px;
-    height: 90px;
-    margin: 0px auto;
-    background-color: white;
+    display: none;
 }
 
 .icon {
@@ -24,5 +15,14 @@
 @media (min-width: 768px) {
     .links {
         display: flex;
+    }
+
+    .links::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0px auto;
+        background-color: white;
     }
 }
