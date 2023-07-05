@@ -17,9 +17,16 @@
     cursor: pointer;
 }
 
-.avatar-border {
+.avatar-border--loaded {
     background: radial-gradient(circle at top left, #60a5fa, #a3e635);
     padding: 0.5rem;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.avatar-border--loading {
+    background: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;    
 }
