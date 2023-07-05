@@ -1,3 +1,5 @@
+'use client';
+import { useState } from 'react';
 import BootstrapImage from "@/components/image";
 
 import styles from '@/styles/Hero.module.css';
@@ -9,14 +11,20 @@ const Button = ({ children }) => {
 };
 
 export default function Hero() {
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+    const onImageLoad = () => {
+        setImageLoaded(true);
+    };
+
     return (
         <section className={`${styles['container']} lg:flex lg:flex-col lg:h-screen lg:justify-center lg:items-start lg:gap-5`}>
             <div className="flex flex-col lg:flex lg:gap-10 lg:flex-row-reverse lg:justify-between lg:items-center min-w-full">
                 <div className="p-10 lg:p-0">
                     <div className={`flex-grow flex justify-center items-center`}>
                         <div className="relative">
-                            <div className={styles['avatar-border']}>
-                                <BootstrapImage className={`${styles['avatar']}`} src="/me.jpg" alt="Me" size={400} />
+                            <div className={imageLoaded ? styles['avatar-border--loaded'] : styles['avatar-border--loading']}>
+                                <BootstrapImage handleLoadComplete={onImageLoad} className={`${styles['avatar']}`} src="/me.jpg" alt="Me" size={400} />
                             </div>
                         </div>
                     </div>
