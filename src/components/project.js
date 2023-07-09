@@ -1,3 +1,10 @@
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({ 
+    subsets: ['latin'],
+    weight: '500'
+});
+
 export const Project = ({ children }) => {
     return (
         <div className="flex flex-col-reverse justify-center items-center gap-5 lg:grid lg:grid-cols-12 lg:items-center">
@@ -44,10 +51,10 @@ export const ProjectDescription = ({ description, tools }) => {
     return (
         <div className="bg-slate-950 px-5 py-3 rounded-md drop-shadow-xl">
             <p>{description}</p>
-            <ul className="flex lg:flex-row-reverse gap-5 mt-2">
+            <ul className="flex flex-wrap lg:flex-row-reverse gap-x-5 gap-y-3 mt-2">
                 {tools.map( (tool, i) => {
                     return (
-                        <li key={i} className="border-lime-400 rounded-xl border px-3">{tool}</li>
+                        <li key={i} className={`${poppins.className} border-lime-400 rounded-xl border px-3 text-sm`}>{tool}</li>
                     )
                 })}
             </ul>
