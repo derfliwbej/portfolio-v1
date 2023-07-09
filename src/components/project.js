@@ -7,29 +7,31 @@ const poppins = Poppins({
 
 export const Project = ({ children }) => {
     return (
-        <div className="flex flex-col-reverse justify-center items-center gap-5 lg:grid lg:grid-cols-12 lg:items-center">
+        <div className="flex flex-col-reverse justify-center items-center gap-5 my-20 lg:grid lg:grid-cols-12 lg:items-center">
             {children}
         </div>
     );
 };
 
-export const ProjectImages = ({ slidesClassName, children }) => {
+export const ProjectImages = ({ slidesClassName, orientation, children }) => {
     return (
-        <div className="lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-2">
+        <div className={orientation === "left" ? "lg:col-start-1 lg:col-end-8 lg:row-start-1 lg:row-end-2"
+                                               : "lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:row-end-2"}>
             <ul className={slidesClassName}>
-                {children.map( (child, i) => {
+                {children.length ? children.map( (child, i) => {
                     return (
                         <li key={i}>{child}</li>
                     )
-                })}
+                }) : <li>{children}</li>}
             </ul>
         </div>
     );
 };
 
-export const ProjectContent = ({ children }) => {
+export const ProjectContent = ({ orientation, children }) => {
     return (
-        <div className="lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-2 lg:text-right">
+        <div className={orientation === "right" ? "lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:row-end-2 lg:text-right"
+                                                : "lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-2 lg:text-left"}>
             {children}
         </div>
     );
@@ -41,9 +43,10 @@ export const ProjectTitle = ({ children }) => {
     );
 };
 
-export const ProjectLinks = ({ children }) => {
+export const ProjectLinks = ({ orientation, children }) => {
     return (
-        <div className="flex flex-start mb-3 gap-3 lg:justify-end">{children}</div>
+        <div className={orientation === "right" ? "flex flex-start mb-3 gap-3 lg:justify-end"
+                                                : "flex -flex-start mb-3 gap-3"}>{children}</div>
     );
 };
 
