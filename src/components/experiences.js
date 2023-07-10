@@ -12,7 +12,7 @@ const Experience = ({ company, url, role, duration, children }) => {
         <div className="mx-auto max-w-xl mb-5 shadow-2xl">
             <div className="overflow-hidden">
                 <input type="checkbox" id={company} className={styles['checkbox']} />
-                <label for={company} className="bg-slate-950 flex flex-between items-center px-5 py-3 rounded-md drop-shadow-md cursor-pointer hover:bg-slate-900">
+                <label htmlFor={company} className="bg-slate-950 flex flex-between items-center px-5 py-3 rounded-md drop-shadow-md cursor-pointer hover:bg-slate-900">
                     <div className="flex-grow">
                         <a href={url} className="font-bold text-xl hover:text-blue-400">{company}</a>
                         <h2 className="text-lg text-purple-200">{role}</h2>
