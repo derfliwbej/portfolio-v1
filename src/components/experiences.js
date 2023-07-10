@@ -38,7 +38,7 @@ const Emp = ({ children }) => {
 
 export default function Experiences() {
     return (
-        <section id="experiences" className="py-5 mb-20">
+        <section id="experiences" className="py-16 mb-8">
             <h1 className="mb-10 text-center text-2xl text-lime-400 font-bold md:text-3xl">Previous Work Experiences</h1>
             <Experience company="KlaudSol" url="https://www.klaudsol.com/" role="Software Engineer Intern" duration="June 2022 - August 2022">
                 <ul>
