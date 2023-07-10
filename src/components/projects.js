@@ -6,8 +6,8 @@ import slideshowStyles from '@/styles/projects/cemetery_system/Slideshow.module.
 
 export default function Projects() {
     return (
-        <section id="projects" className="py-5 max-w-5xl mx-auto">
-            <h1 className="mb-10 text-center text-xl text-lime-400 font-bold md:text-3xl">Some Projects I Built</h1>
+        <section id="projects" className="py-5 max-w-5xl mx-auto mb-20">
+            <h1 className="mb-10 text-center text-2xl text-lime-400 font-bold md:text-3xl">Some Projects I Built</h1>
 
             <Project>
                 <ProjectImages orientation="left" slidesClassName={slideshowStyles['container']}>

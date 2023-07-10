@@ -21,8 +21,8 @@ const SkillIcon = ({ src, size, children }) => {
 
 export default function Skills() {
     return (
-        <section id="skills" className="py-16">
-            <h1 className="mb-10 text-center text-xl text-lime-400 font-bold md:text-3xl">I am proficient in the following technologies</h1>
+        <section id="skills" className="py-16 mb-20">
+            <h1 className="mb-10 text-center text-2xl text-lime-400 font-bold md:text-3xl">I am proficient in the following technologies</h1>
             <div className={`${poppins.className} flex gap-3 lg:gap-5 justify-center items-start`}>
                 <div className="flex flex-col gap-3 lg:gap-5">
                     <SkillIcon size="75" src="/js_logo.svg">JAVASCRIPT</SkillIcon>
