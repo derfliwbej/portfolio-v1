@@ -7,7 +7,7 @@ const poppins = Poppins({
 
 export const Project = ({ children }) => {
     return (
-        <div className="flex flex-col-reverse justify-center items-center gap-5 my-20 lg:grid lg:grid-cols-12 lg:items-center">
+        <div className="flex flex-col-reverse justify-center items-center gap-5 mb-20 lg:grid lg:grid-cols-12 lg:items-center">
             {children}
         </div>
     );
