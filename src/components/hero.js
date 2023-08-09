@@ -24,7 +24,7 @@ export default function Hero() {
                     <div className={`flex-grow flex justify-center items-center`}>
                         <div className="relative">
                             <div className={imageLoaded ? styles['avatar-border--loaded'] : styles['avatar-border--loading']}>
-                                <BootstrapImage handleLoadComplete={onImageLoad} className={`${styles['avatar']}`} src="/toga.jpg" alt="Me" size={400} />
+                                <BootstrapImage handleLoadComplete={onImageLoad} className={`${styles['avatar']}`} src="/toga-square.jpg" alt="Me" size={400} />
                             </div>
                         </div>
                     </div>
