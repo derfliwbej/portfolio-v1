@@ -12,6 +12,19 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      animation: {
+        'drawer-open': 'drawer-open 0.3s ease-in-out'
+      },
+      keyframes: {
+        'drawer-open': {
+          'from': { 
+            right: '-100%'
+          },
+          'to': {
+            right: '0px'
+          }
+        }
+      }
     },
   },
   plugins: [],
