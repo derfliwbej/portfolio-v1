@@ -1,10 +1,6 @@
 import './globals.css'
-import { Ubuntu_Mono } from 'next/font/google'
-
-const ubuntu_mono = Ubuntu_Mono({ 
-  subsets: ['latin'],
-  weight: '400'
-});
+import DrawerContextProvider from '@/context/DrawerContext';
+import BodyWrapper from '@/components/body';
 
 export const metadata = {
   title: 'Jeb Wilfred Panganiban',
@@ -14,7 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={ubuntu_mono.className}>{children}</body>
+      <DrawerContextProvider>
+        <BodyWrapper>
+          {children}
+        </BodyWrapper>
+      </DrawerContextProvider>
     </html>
   )
 }
