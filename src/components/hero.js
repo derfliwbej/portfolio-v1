@@ -6,7 +6,7 @@ import styles from '@/styles/Hero.module.css';
 
 const Button = ({ children }) => {
     return (
-        <button className="border border-lime-400 text-lime-400 rounded-sm px-8 py-3 hover:bg-lime-400 hover:bg-opacity-10">{children}</button>
+        <button type="submit" className="border border-lime-400 text-lime-400 rounded-sm px-8 py-3 hover:bg-lime-400 hover:bg-opacity-10">{children}</button>
     );
 };
 
@@ -42,7 +42,9 @@ export default function Hero() {
                         I am a Filipino software developer. I have a passion for developing innovative tech solutions, and I am always trying to improve my skils. I graduated as Cum Laude with a degree of BS Computer Science in the University of the Philippines Los Baños.
                     </div>
                     <div className="text-center lg:text-left">
-                        <Button>View My Resume</Button>
+                        <form method="get" action="Jeb_Panganiban_Resume.pdf">
+                            <Button>View My Resume</Button>
+                        </form>
                     </div>
                 </div>
             </div>
