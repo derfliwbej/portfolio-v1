@@ -39,7 +39,7 @@ export default function Hero() {
                         <h1 className="text-center text-3xl text-blue-400 font-bold md:text-4xl lg:text-6xl lg:text-left">Software Developer</h1>
                     </div>
                     <div className="text-center text-md  max-w-xl lg:text-lg lg:text-left">
-                        I am a Filipino software developer. I have a passion for developing innovative tech solutions, and I am always trying to improve my skills. I graduated as Cum Laude with a degree of BS Computer Science in the University of the Philippines Los Baños.
+                        I am a Filipino software developer. I have a passion for developing innovative tech solutions, and I am always trying to improve my skills. I graduated as Cum Laude with a degree of BS Computer Science in the University of the Philippines Los Baños. Currently, I am working as a Software Engineer with a focus in frontend development in Samsung R&D Insitute Philippines.
                     </div>
                     <div className="text-center lg:text-left">
                         <form method="get" action="Jeb_Panganiban_Resume.pdf">

@@ -25,22 +25,22 @@ export default function Skills() {
             <h1 className="mb-10 text-center text-2xl text-lime-400 font-bold md:text-3xl">I am proficient in the following technologies</h1>
             <div className={`${poppins.className} flex gap-3 lg:gap-5 justify-center items-start`}>
                 <div className="flex flex-col gap-3 lg:gap-5">
-                    <SkillIcon size="75" src="/js_logo.svg">JAVASCRIPT</SkillIcon>
+                    <SkillIcon size="75" src="/react_logo.svg">REACTJS</SkillIcon>
+                    <SkillIcon size="75" src="/expressjs_logo.svg">EXPRESSJS</SkillIcon>
                     <SkillIcon size="75" src="/html_logo.svg">HTML</SkillIcon>
-                    <SkillIcon size="75" src="/css_logo.svg">CSS</SkillIcon>
                     <SkillIcon size="75" src="/tailwind_logo.svg">TAILWINDCSS</SkillIcon>
                 </div>
                 <div className="flex flex-col gap-3 lg:gap-5">
-                    <SkillIcon size="75" src="/flutter_logo.svg">FLUTTER</SkillIcon>
+                    <SkillIcon size="75" src="/nextjs_logo.svg">NEXTJS</SkillIcon>
                     <SkillIcon size="75" src="/mongodb_logo.svg">MONGODB</SkillIcon>
                     <SkillIcon size="75" src="/postgresql_logo.svg">POSTGRESQL</SkillIcon>
                     <SkillIcon size="75" src="/nodejs_logo.svg">NODEJS</SkillIcon>
                 </div>
                 <div className="flex flex-col gap-3 lg:gap-5">
-                    <SkillIcon size="75" src="/expressjs_logo.svg">EXPRESSJS</SkillIcon>
-                    <SkillIcon size="75" src="/nextjs_logo.svg">NEXTJS</SkillIcon>
-                    <SkillIcon size="75" src="/react_logo.svg">REACTJS</SkillIcon>
+                    <SkillIcon size="75" src="/js_logo.svg">JAVASCRIPT</SkillIcon>
+                    <SkillIcon size="75" src="/css_logo.svg">CSS</SkillIcon>
                     <SkillIcon size="75" src="/git_logo.svg">GIT</SkillIcon>
+                    <SkillIcon size="75" src="/flutter_logo.svg">FLUTTER</SkillIcon>
                 </div>
             </div>
         </section>
